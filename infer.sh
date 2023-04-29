@@ -1,6 +1,6 @@
 USE_GPU=1
-WORLD_SIZE=8
-MODEL='GIT_BASE_VQAv2' # Options: ('GIT_BASE_VQAv2', 'GIT_LARGE_VQAv2')
+WORLD_SIZE=4
+MODEL='GIT_LARGE_VQAv2' # Options: ('GIT_BASE_VQAv2', 'GIT_LARGE_VQAv2')
 
 if [ $USE_GPU -eq 1 ]; then
     AZFUSE_TSV_USE_FUSE=1 mpirun -n ${WORLD_SIZE} python -m generativeimage2text.inference -p "{'type': 'test_git_inference_single_tsv', \
