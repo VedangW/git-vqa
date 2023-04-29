@@ -1,4 +1,4 @@
-MODEL='GIT_BASE_VQAv2' # Options: ('GIT_BASE_VQAv2', 'GIT_LARGE_VQAv2')
+MODEL='GIT_LARGE_VQAv2' # Options: ('GIT_BASE_VQAv2', 'GIT_LARGE_VQAv2')
 
 # Transform predictions to json
 python transform_output.py \
